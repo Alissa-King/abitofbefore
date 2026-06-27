@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #f8f5f0;
+  --text: #1a1a1a;
+  --muted: #6b6560;
+  --accent: #3d2b1f;
+  --max-width: 640px;
+}
+
+html {
+  font-family: 'EB Garamond', Georgia, serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 2.5rem 2rem 1.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--accent);
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+}
+
+nav {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+}
+
+nav a:hover {
+  color: var(--text);
+}
+
+main {
+  flex: 1;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 2rem 4rem;
+  width: 100%;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+}
+
+/* Index page */
+.poem-list {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.poem-list li {
+  border-top: 1px solid #e0dbd4;
+  padding: 1.25rem 0;
+}
+
+.poem-list li:last-child {
+  border-bottom: 1px solid #e0dbd4;
+}
+
+.poem-list a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+.poem-list a:hover {
+  color: var(--accent);
+}
+
+.poem-number {
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.04em;
+}
+
+/* Poem page */
+.poem-header {
+  margin-bottom: 3rem;
+}
+
+.poem-header h1 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+
+.poem-body {
+  white-space: pre-wrap;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--text);
+}
+
+.poem-nav {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0dbd4;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.poem-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.poem-nav a:hover {
+  color: var(--text);
+}
+
+/* About page */
+.about-content {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.about-content p + p {
+  margin-top: 1.2rem;
+}
+
+h2.page-title {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  text-transform: uppercase;
+  font-style: normal;
+}
